@@ -148,7 +148,7 @@ In this section will install an Algorand node.
 > all the way, synced.  
 >   
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image1.png)
+> generated](images/media/image1.png)
 > 
 > To verify where your data directory is and that you are running
 > TestNet, use these two commands:
@@ -156,12 +156,12 @@ In this section will install an Algorand node.
 1.  ps aux | grep algod
 
 > ![A close up of a mans face Description automatically
-> generated](media/image2.png)
+> generated](images/media/image2.png)
 
 2.  goal node status -d \~/node/data
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image3.png)
+> generated](images/media/image3.png)
 
 ## Apply current updates
 
@@ -263,7 +263,7 @@ Time Estimate - 10 minutes
 > and select CodeGen Options for the Client SDK in the desired language
 > 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image4.png)
+> generated](images/media/image4.png)
 
 ## Install VS Code or alternate IDE (optional)  
 
@@ -300,7 +300,7 @@ Should you decide to use VS Code, your extensions list should look
 something like this:
 
 > ![A screenshot of a computer Description automatically
-> generated](media/image5.png)
+> generated](images/media/image5.png)
 
 **Unzip the hackathon samples**  
   
@@ -315,7 +315,7 @@ In terminal type in echo $HOME to get your Home folder location. The
 contents should look similar to this:
 
 ![A screenshot of text Description automatically
-generated](media/image6.png)**  
+generated](images/media/image6.png)**  
 **
 
 ## Replace tokens and addresses in the sample code. 
@@ -340,13 +340,13 @@ each.
   - > kmd.net
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image7.png)
+> generated](images/media/image7.png)
 > 
 > For example, in the JavaScript SDK sample webapp test.js file update
 > the constants with these values:
 > 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image8.png)
+> generated](images/media/image8.png)
 
 ## Start two terminal sessions 
 
@@ -394,7 +394,7 @@ different programming skill sets.
 3.  Import these Json swagger files into Postman
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image9.png)
+> generated](images/media/image9.png)
 
 4.  Make these changes to the request:
 
@@ -418,7 +418,7 @@ different programming skill sets.
 5.  See the response
 
 > ![A screenshot of a social media post Description automatically
-> generated](media/image10.png)
+> generated](images/media/image10.png)
 
 # 
 
@@ -442,7 +442,7 @@ used to send Algos to an account, only works for TestNet and not a
 Private Network.
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image11.png)
+> generated](images/media/image11.png)
 
 1)  Navigate to the algorandsamples folder
 
@@ -450,7 +450,7 @@ Private Network.
     and Node Nodes that will be created.
 
 > ![A close up of a map Description automatically
-> generated](media/image12.png)
+> generated](images/media/image12.png)
 
 3)  In Finder, navigate to your root directory and show the directory
     structure does not have folders for Node and Primary.
@@ -464,20 +464,20 @@ Private Network.
     networktemplate.json**
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image13.png)
+generated](images/media/image13.png)
 
   - **goal network start -r \~/net1**
 
   - **goal network status -r \~/net1**
 
 ![A screenshot of a social media post Description automatically
-generated](media/image14.png)
+generated](images/media/image14.png)
 
 5)  Open Finder and look at the directory structure for /net1/Node and
     /net1/Primary  
       
     ![A screenshot of a cell phone Description automatically
-    generated](media/image15.png)
+    generated](images/media/image15.png)
 
 Go to
 <span class="underline"><https://developer.algorand.org/docs/creating-new-account-and-participation-key></span>
@@ -492,7 +492,7 @@ to complete all the rest of the tasks in this tutorial including:
   - Creating a multisig account
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image16.png)
+> generated](images/media/image16.png)
 
 Note: The TestNet Dispenser only works for TestNet accounts (not Private
 Network)
@@ -516,7 +516,7 @@ The goal command line tool provides access to these objects, methods and
 properties.
 
 ![A screenshot of a computer Description automatically
-generated](media/image17.png)
+generated](images/media/image17.png)
 
 1.  To start a node use this command:
 
@@ -531,7 +531,7 @@ generated](media/image17.png)
     goal -h  
       
     ![A screenshot of a social media post Description automatically
-    generated](media/image18.png)
+    generated](images/media/image18.png)
 
 4.  To get help with and command
 
@@ -542,7 +542,7 @@ generated](media/image17.png)
 > goal node -h
 > 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image19.png)
+> generated](images/media/image19.png)
 
 5.  Run this to get a status. We will copy off the block number, for
     subsequent use in AlgoExplorer:
@@ -552,7 +552,7 @@ generated](media/image17.png)
 6.  Copy last committed block
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image20.png)
+generated](images/media/image20.png)
 
 ## AlgoExplorer.io
 
@@ -565,24 +565,24 @@ account addresses in either MainNet or TestNet.
 2.  Click on TestNet in the dropdown
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image21.png)
+generated](images/media/image21.png)
 
 3.  Paste in block, press search, click on transactions. If you do not
     see any transactions, use this block: 868921
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image22.png)
+generated](images/media/image22.png)
 
 4.  Click on TxID
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image23.png)
+> generated](images/media/image23.png)
 
 5.  Drill into a transaction and notice Sender / receiver / note /
     status / amount / fees and other fields.
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image24.png)
+> generated](images/media/image24.png)
 
 # **SDKs**
 
@@ -616,7 +616,7 @@ generated](media/image22.png)
 2)  The JavaScript launch.json file should be similar to this
 
 ![A screenshot of a social media post Description automatically
-generated](media/image25.png)
+generated](images/media/image25.png)
 
 ### JavaScript SDK Sample webapp
 
@@ -629,7 +629,7 @@ generated](media/image25.png)
 [<span class="underline">https://github.com/algorand/js-algorand-sdk</span>](https://github.com/algorand/js-algorand-sdk)
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image26.png)
+generated](images/media/image26.png)
 
 4)  Install the JavaScript SDK using the instructions on the readme
     file.
@@ -639,7 +639,7 @@ generated](media/image26.png)
     sample code on GitHub to stay in sync.
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image27.png)
+> generated](images/media/image27.png)
 
 6)  Run thru debugger with localhost (launch.json file below) or just
     bring up Finder and double click on Test.html.
@@ -648,7 +648,7 @@ generated](media/image26.png)
     localhost:
 
 > ![A screenshot of a social media post Description automatically
-> generated](media/image25.png)
+> generated](images/media/image25.png)
 
 8)  **Run sample by navigating to the test.html page and click on
     buttons in this order:**
@@ -679,22 +679,22 @@ Screen shots:
 1.  Get Latest Block
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image28.png)
+> generated](images/media/image28.png)
 
 2.  Generate Account
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image29.png)
+> generated](images/media/image29.png)
 
 3.  Get Account Details
 
 > ![A screenshot of a social media post Description automatically
-> generated](media/image30.png)
+> generated](images/media/image30.png)
 
 4.  Algorand TestNet Dispenser
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image31.png)
+> generated](images/media/image31.png)
 
 5.  Recover Account from Account Mnemonic
 
@@ -702,17 +702,17 @@ Screen shots:
     seconds
 
 > ![A screenshot of a social media post Description automatically
-> generated](media/image32.png)
+> generated](images/media/image32.png)
 
 7.  Submit Transaction
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image33.png)
+> generated](images/media/image33.png)
 
 8.  Get Tx From Account
 
 > ![A screenshot of a cell phone Description automatically
-> generated](media/image34.png)
+> generated](images/media/image34.png)
 
 9)  **Walk thru code in code in** **test.js** and **see each function we
     just used**.  
@@ -732,7 +732,7 @@ Screen shots:
     code, this should be the same as seen when running the demo.
 
 ![A screenshot of a social media post Description automatically
-generated](media/image35.png)
+generated](images/media/image35.png)
 
 ### Encode/Decode Note Field
 
@@ -750,7 +750,7 @@ generated](media/image35.png)
 3)  Look for the encodeObj method
 
 ![A screenshot of a social media post Description automatically
-generated](media/image36.png)
+generated](images/media/image36.png)
 
 1)  Open test.js
 
@@ -759,7 +759,7 @@ generated](media/image36.png)
 3)  Look for the decodeObj method
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image37.png)
+generated](images/media/image37.png)
 
 ### Node Example: Retrieving Latest Block Information  
 
@@ -863,7 +863,7 @@ export GOPATH
 4)  The Go **launch.json** file should be similar to this:
 
 ![A screenshot of a social media post Description automatically
-generated](media/image38.png)
+generated](images/media/image38.png)
 
 5)  In this step we will create an algodclient using the Go SDK. We will
     create the algod client and fetch node status information, and then
@@ -879,17 +879,17 @@ If you have not already done so, Download/clone the Go SDK from:
 7)  **Review the readme file:**
 
 ![A screenshot of a social media post Description automatically
-generated](media/image39.png)
+generated](images/media/image39.png)
 
 8)  **In VS Code, open algodclient.go in the VS Code Explorer**
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image40.png)
+generated](images/media/image40.png)
 
 9)  Your launch.json file should look similar to this:
 
 ![A screenshot of a social media post Description automatically
-generated](media/image41.png)
+generated](images/media/image41.png)
 
 1.  Select the debugger
 
@@ -905,7 +905,7 @@ generated](media/image41.png)
 6.  Note status info in the debug console
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image42.png)
+generated](images/media/image42.png)
 
 10) The debug console should show results for creating an algod client,
     algod status and block information.
@@ -971,7 +971,7 @@ Time estimate: 20 minutes
 2)  The Java **launch.json** file should be similar to this:
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image43.png)
+generated](images/media/image43.png)
 
 3)  In this section we will get a block and display the info using the
     Java SDK. We will create the algod client and fetch node status
@@ -995,7 +995,7 @@ generated](media/image43.png)
 5.  Note the Output Console Display of the latest block
 
 ![A screenshot of a social media post Description automatically
-generated](media/image44.png)
+generated](images/media/image44.png)
 
 5)  Run as many of the following scripts as desired, in this order
     (there is a file for each in a folder):
@@ -1080,7 +1080,7 @@ example.py
 2)  The Python **launch.json** file should be similar to this:
 
 ![A screenshot of a social media post Description automatically
-generated](media/image45.png)
+generated](images/media/image45.png)
 
 3)  If not already done, clone or download the Python SDK at:
 
@@ -1113,7 +1113,7 @@ goal account new -d \[data directory\] -w \[wallet name\]
     3\) Add your data directory path
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image46.png)
+generated](images/media/image46.png)
 
 9)  Edit example.py  
       
@@ -1123,7 +1123,7 @@ generated](media/image46.png)
     4\) Run the code and see the results in the Output console
 
 ![A screenshot of a cell phone Description automatically
-generated](media/image47.png)
+generated](images/media/image47.png)
 
 10) The example code performs the following functions:  
       
@@ -1152,14 +1152,14 @@ goal wallet list -w \[wallet name\] -d data
 You should see something like this:
 
 ![A close up of a device Description automatically
-generated](media/image48.png)
+generated](images/media/image48.png)
 
 goal account list -w \[wallet name\] -d data
 
 You should see something like this:
 
 ![A close up of a device Description automatically
-generated](media/image49.png)
+generated](images/media/image49.png)
 
 Other examples – (optional)
 
@@ -1248,7 +1248,7 @@ Required for a New Borderless Economy
   - [<span class="underline">https://www.coindesk.com/events/consensus-2019/videos</span>](https://www.coindesk.com/events/consensus-2019/videos)
 
 ![A screenshot of a social media post Description automatically
-generated](media/image50.png)
+generated](images/media/image50.png)
 
 More resources here:
 
