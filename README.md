@@ -2,106 +2,115 @@
 
 **Table of Contents**
 
-[***Getting Started for Hackathon***](#getting-started-for-hackathon)
-***2***
+[Getting Started for Hackathon 2](#getting-started-for-hackathon)
 
-> **[Apply current updates](#apply-current-updates)** **3**
-> 
-> **[Private network tutorials
-> (optional)](#private-network-tutorials-optional)** **3**
-> 
-> **[Install VS Code or alternate IDE
-> (optional)](#install-vs-code-or-alternate-ide-optional)** **5**
-> 
-> **[Replace tokens and addresses in the sample
-> code.](#replace-tokens-and-addresses-in-the-sample-code.)** **9**
-> 
-> **[Start two terminal sessions](#start-two-terminal-sessions)** **10**
+[Install Algorand node 2](#_Toc16786815)
 
-***[Getting started with Private Network
-(optional)](#getting-started-with-private-network-optional)*** ***12***
+[Verify your data directory 4](#_Toc16786816)
 
-***[Goal Command Line tools /
-AlgoExplorer.io](#goal-command-line-tools-algoexplorer.io)*** ***16***
+[Apply current updates 5](#apply-current-updates)
 
-> **[Goal](#goal)** **16**
-> 
-> **[AlgoExplorer.io](#algoexplorer.io)** **18**
+[Private network tutorials (optional)
+5](#private-network-tutorials-optional)
 
-***[SDKs](#sdks)*** ***21***
+[Download/Clone Algorand SDKs in your language of choice.
+5](#_Toc16786819)
 
-> [JavaScript SDK Sample webapp](#javascript-sdk-sample-webapp) 22
-> 
-> [Encode/Decode Note Field](#encodedecode-note-field) 27
-> 
-> [Node Example: Retrieving Latest Block
-> Information](#node-example-retrieving-latest-block-information) 29
-> 
-> [More Examples](#more-examples) 30
-> 
-> [kmdclient.go - kmd client go](#kmdclient.go---kmd-client-go) 34
-> 
-> [backupwallet.go - Backing up a
-> Wallet](#backupwallet.go---backing-up-a-wallet) 35
-> 
-> [signsubmit.go - Signing and submitting a
-> transaction](#signsubmit.go---signing-and-submitting-a-transaction) 35
-> 
-> [signoffline.go - Sign a transaction
-> offline](#signoffline.go---sign-a-transaction-offline) 35
-> 
-> [submittransfilefrom.go - Submit the transaction from a
-> file](#submittransfilefrom.go---submit-the-transaction-from-a-file) 35
-> 
-> [manipulatemultisig.go - Manipulating multisig
-> transactions](#manipulatemultisig.go---manipulating-multisig-transactions)
-> 35
-> 
-> **[Java SDK](#java-sdk)** **35**
-> 
-> [GetBlock.java – gets the status and
-> lastround](#getblock.java-gets-the-status-and-lastround) 36
-> 
-> [AccountTest.java - Generate account and backup
-> phrase](#accounttest.java---generate-account-and-backup-phrase) 37
-> 
-> [NewWallet.java - kmd client](#newwallet.java---kmd-client) 37
-> 
-> [BackupWallet.java and RestoreWallet.java - Backing up and restoring a
-> Wallet](#backupwallet.java-and-restorewallet.java---backing-up-and-restoring-a-wallet)
-> 38
-> 
-> [SignAndSubmit.java - Signing and submitting a
-> transaction](#signandsubmit.java---signing-and-submitting-a-transaction)
-> 38
-> 
-> [SignOffline.java - Sign a transaction
-> offline](#signoffline.java---sign-a-transaction-offline) 38
-> 
-> [SubmitFromFile.java - Submit the transaction from a
-> file](#submitfromfile.java---submit-the-transaction-from-a-file) 38
-> 
-> [GetAccountTransactions.java - Get account
-> transactions](#getaccounttransactions.java---get-account-transactions)
-> 38
-> 
-> [Multisig.Java - Manipulating multisig
-> transactions](#multisig.java---manipulating-multisig-transactions) 38
-> 
-> [EncodeDecode.Java - Encode/decode Note Field  
->   
-> This sample shows how to encode and decode the Note Field to build
-> Layer 2
-> solutions.](#encodedecode.java---encodedecode-note-field-this-sample-shows-how-to-encode-and-decode-the-note-field-to-build-layer-2-solutions.)
-> 38
-> 
-> **[Python SDK](#python-sdk)** **38**
-> 
-> [example.py](#example.py) 39
-> 
-> [Working with the Note Field:](#working-with-the-note-field) 42
+[Install VS Code or alternate IDE (optional)
+7](#install-vs-code-or-alternate-ide-optional)
 
-***[Resources](#resources)*** ***43***
+[Unzip the hackathon samples 8](#_Toc16786821)
+
+[Replace tokens and addresses in the sample code.
+11](#replace-tokens-and-addresses-in-the-sample-code.)
+
+[Start two terminal sessions 12](#start-two-terminal-sessions)
+
+[Install Postman or your favorite code-agnostic tool for REST API
+testing (Paw… etc) (Optional) 13](#_Toc16786824)
+
+[Getting started with Private Network (optional)
+14](#getting-started-with-private-network-optional)
+
+[Goal Command Line tools / AlgoExplorer.io
+18](#goal-command-line-tools-algoexplorer.io)
+
+[Goal 18](#goal)
+
+[AlgoExplorer.io 20](#algoexplorer.io)
+
+[SDKs 22](#sdks)
+
+[JavaScript SDK 22](#bookmark=id.111kx3o)
+
+[JavaScript SDK Sample webapp 23](#javascript-sdk-sample-webapp)
+
+[Encode/Decode Note Field 29](#encodedecode-note-field)
+
+[Node Example: Retrieving Latest Block Information
+30](#node-example-retrieving-latest-block-information)
+
+[More Examples 31](#more-examples)
+
+[Go SDK 31](#bookmark=id.3ygebqi)
+
+[kmdclient.go - kmd client go 35](#kmdclient.go---kmd-client-go)
+
+[backupwallet.go - Backing up a Wallet
+36](#backupwallet.go---backing-up-a-wallet)
+
+[signsubmit.go - Signing and submitting a transaction
+36](#signsubmit.go---signing-and-submitting-a-transaction)
+
+[signoffline.go - Sign a transaction offline
+36](#signoffline.go---sign-a-transaction-offline)
+
+[submittransfilefrom.go - Submit the transaction from a file
+36](#submittransfilefrom.go---submit-the-transaction-from-a-file)
+
+[manipulatemultisig.go - Manipulating multisig transactions
+36](#manipulatemultisig.go---manipulating-multisig-transactions)
+
+[Java SDK 36](#java-sdk)
+
+[GetBlock.java – gets the status and lastround
+37](#getblock.java-gets-the-status-and-lastround)
+
+[AccountTest.java - Generate account and backup phrase
+38](#accounttest.java---generate-account-and-backup-phrase)
+
+[NewWallet.java - kmd client 38](#newwallet.java---kmd-client)
+
+[BackupWallet.java and RestoreWallet.java - Backing up and restoring a
+Wallet
+38](#backupwallet.java-and-restorewallet.java---backing-up-and-restoring-a-wallet)
+
+[SignAndSubmit.java - Signing and submitting a transaction
+39](#signandsubmit.java---signing-and-submitting-a-transaction)
+
+[SignOffline.java - Sign a transaction offline
+39](#signoffline.java---sign-a-transaction-offline)
+
+[SubmitFromFile.java - Submit the transaction from a file
+39](#submitfromfile.java---submit-the-transaction-from-a-file)
+
+[GetAccountTransactions.java - Get account transactions
+39](#getaccounttransactions.java---get-account-transactions)
+
+[Multisig.Java - Manipulating multisig transactions
+39](#multisig.java---manipulating-multisig-transactions)
+
+[EncodeDecode.Java - Encode/decode Note Field This sample shows how to
+encode and decode the Note Field to build Layer 2 solutions.
+39](#encodedecode.java---encodedecode-note-field-this-sample-shows-how-to-encode-and-decode-the-note-field-to-build-layer-2-solutions.)
+
+[Python SDK 39](#python-sdk)
+
+[example.py 39](#example.py)
+
+[Working with the Note Field: 43](#working-with-the-note-field)
+
+[Resources 44](#resources)
 
 # **Getting Started for Hackathon**
 
@@ -115,33 +124,40 @@ Download
 and unzip into a folder off of your $HOME folder. In terminal type in
 echo $HOME to get your Home folder location.
 
-**Install Algorand node  
+<span id="_Toc16786815" class="anchor"></span>**Install Algorand node  
 **Time Estimate 10 minutes
 
 In this section will install an Algorand node.
 
-> [<span class="underline">https://developer.algorand.org/docs/introduction-installing-node</span>](https://developer.algorand.org/docs/introduction-installing-node)  
->   
-> By default, an Algorand installation is configured to run on MainNet.
-> For most users, this is the desired outcome.  Developers,
-> however, need access to our TestNet or DevNet networks. This
-> [<span class="underline">guide</span>](https://developer.algorand.org/docs/switching-networks)
-> will walk you through how to switch networks, if you have not already
-> done so.
-> 
-> Your node may take a while to sync (several hours). You can proceed to
-> the following steps in the meantime, noting if the goal command does
-> not seem to be working, like transferring funds for example, it may be
-> because the node is not synced yet. To see if it is synced use this
-> command from terminal:
-> 
+A synchronized node will be provided for this hackathon, however, you
+need to install your own node, so you can do this lab exercise and
+continue to work on the solution after the hackathon is over, as well as
+build other solutions. Follow the instructions on how to install your
+node are here:
+
+<span class="underline"><https://developer.algorand.org/docs/introduction-installing-node>  
+</span>
+
+By default, an Algorand installation is configured to run on MainNet.
+For most users, this is the desired outcome.  Developers, however, need
+access to our TestNet or DevNet networks. This
+[<span class="underline">guide</span>](https://developer.algorand.org/docs/switching-networks)
+will walk you through how to switch networks, if you have not already
+done so.
+
+Your node may take a while to sync (several hours). You can proceed to
+the following steps in the meantime, noting if the goal command does not
+seem to be working, like transferring funds for example, it may be
+because the node is not synced yet. To see if it is synced use this
+command from terminal:
+
 > goal node status -d \~/node/data
-> 
-> Note: When installing with DEB or RPM packages the binaries will be
-> installed in the /usr/bin and the data directory will be set to
-> /var/lib/algorand. It is advisable in these installs that you add the
-> following export to your shell config files.
-> 
+
+Note: When installing with DEB or RPM packages the binaries will be
+installed in the /usr/bin and the data directory will be set to
+/var/lib/algorand. It is advisable in these installs that you add the
+following export to your shell config files.
+
 > export ALGORAND\_DATA=/var/lib/algorand
 > 
 > When the Sync Time is zero consistently, it will be close to, if not
@@ -149,9 +165,78 @@ In this section will install an Algorand node.
 >   
 > ![A screenshot of a cell phone Description automatically
 > generated](images/media/image1.png)
+
+**Alternatives**
+
+The above process will take several hours to sync, so there are two
+alternatives that can be used in the meantime. Each option provides an
+Algod token and a Server URL. These values will be needed in your
+solution code as well as the sample hackathon lab exercises.  
+  
+  
+**Algorand Berlin Hackathon**  
+  
+**Option 1**
+
+The API Token and Server address can be used in the Hackathon. Once the
+hackathon is over, you will need to use your own node or one from
+Purestake (see Option 2).
+
+> API Token
 > 
-> To verify where your data directory is and that you are running
-> TestNet, use these two commands:
+> ef920e2e7e002953f4b29a8af720efe8e4ecc75ff102b165e0472834b25832c1  
+>   
+> Server Address
+
+<http://berlinhack.algodev.network:9100>
+
+**Purestake Token**
+
+**Option 2**
+
+PureStake is offering up a token for this hackathon. You do not need to
+register. This is free for use during the hackathon.
+
+> After the Hackathon is over, you can register to receive a new token
+> here:  
+>   
+> <https://www.purestake.com/algorand-api>
+> 
+> More details here:
+> 
+> <https://www.purestake.com/technology/algorand-services/>
+
+***API-Key token for both TestNet and MainNet:  
+***
+
+> B3SU4KcVKi94Jap2VXkK83xx38bsv95K5UZm2lab
+> 
+> TestNet Server URL address:
+> https://testnet-algorand.api.purestake.io/ps1
+> 
+> MainNet Server URL address:
+> <https://mainnet-algorand.api.purestake.io/ps1>
+
+Purestake offers many benefits including a Basic free tier as well as
+Pro and Enterprise levels:
+
+> Instant Access to Algorand API in Testnet and Mainnet
+
+  - No wait for downloads and blockchain sync times
+
+> API is backed by Full Archival Transaction Indexer Nodes
+
+  - Full algod API with performant transaction queries
+
+> Secure and Reliable Infrastructure
+
+  - Automated Highly Available Infrastructure, Managed 24x7x365
+
+<span id="_Toc16786816" class="anchor"></span>**Verify your data
+directory**  
+  
+To verify where your data directory is and that you are running TestNet,
+use these two commands:
 
 1.  ps aux | grep algod
 
@@ -171,32 +256,22 @@ In this section will install an Algorand node.
 
 ## Private network tutorials (optional)
 
-> Time Estimate - 5 minutes to an hour**  
+> Time Estimate - 5 minutes **  
 > **  
 > If are new to Algorand, it may be useful to spend some time doing the
-> Private Network tutorials. To get you started in creating a Private
-> network, in this document, see [<span class="underline">Getting
-> started with the Private Network</span>](#section-1), ( Estimated time
-> 5 minutes) then go to the
-> <span class="underline"><https://developer.algorand.org/docs/tutorials></span>
-> to complete all the rest of the tasks.  
-> <span class="underline">  
-> </span>  
+> Private Network tutorials.
+> 
 > These tutorials will get you familiar with many of the Goal commands
 > in a Private Network that you would be using to develop you solution.
 > The purpose of the Private Network is to facilitate developers with a
 > testing/learning environment without having to use TestNet or MainNet.
-> Once finished you can delete the private network as this is for
-> learning only and cannot be used for further development, other than
-> testing with SDK code.  
->   
-> Note: The TestNet Dispenser only works for TestNet accounts (not
-> Private Network). The TestNet dispenser will send Algos to an account
-> on TestNet, to facilitate testing of transactions.  
->   
-> (Estimated total time – 1 hour).
+> 
+> To get started in creating a Private network, in this document, see
+> [<span class="underline">Getting started with the Private
+> Network</span>](#section-1), (Estimated time 5 minutes)
 
-**Download/Clone Algorand SDKs in your language of choice.  
+<span id="_Toc16786819" class="anchor"></span>**Download/Clone Algorand
+SDKs in your language of choice.  
   
 These are the SDKs available to date. More are on the way. \*\***  
 Time Estimate - 10 minutes
@@ -302,14 +377,17 @@ something like this:
 > ![A screenshot of a computer Description automatically
 > generated](images/media/image5.png)
 
-**Unzip the hackathon samples**  
+<span id="_Toc16786821" class="anchor"></span>**Unzip the hackathon
+samples**  
   
   
 Time Estimate - 5 minutes  
   
-Download
+From <http://github.com/algoand> Download/Clone the Hackathon repository
+which has the
 [<span class="underline">algorandsamples.zip</span>](https://drive.google.com/file/d/199BdejiyA_dTRlqwOqcoubtoRG_WHwAH/view?usp=sharing)
-and unzip into a folder off of your $HOME folder
+file and this document in the readme.md, Unzip into a folder off of your
+$HOME folder
 
 In terminal type in echo $HOME to get your Home folder location. The
 contents should look similar to this:
@@ -325,7 +403,7 @@ Time Estimate - 10 minutes
 Follow the SDK install directions for each in the readme files. In all
 of the examples, at some point, you will need to replace the code
 placeholders with the Algod and Kmd tokens and network addresses in
-each.
+each. For the node you created, these can be found here…
 
 > From your node directory copy off values in /data for:
 
@@ -341,10 +419,10 @@ each.
 
 > ![A screenshot of a cell phone Description automatically
 > generated](images/media/image7.png)
-> 
-> For example, in the JavaScript SDK sample webapp test.js file update
-> the constants with these values:
-> 
+
+For example, in the JavaScript SDK sample webapp test.js file update the
+constants with these values:
+
 > ![A screenshot of a cell phone Description automatically
 > generated](images/media/image8.png)
 
@@ -367,8 +445,8 @@ each.
 
 # 
 
-**Install Postman or your favorite code-agnostic tool for REST API
-testing (Paw… etc) (Optional)  
+<span id="_Toc16786824" class="anchor"></span>**Install Postman or your
+favorite code-agnostic tool for REST API testing (Paw… etc) (Optional)  
   
 **Time Estimate - 10 minutes
 
@@ -429,20 +507,15 @@ different programming skill sets.
 In this section you will learn how to create a Private Network. A
 Private Network is for developers. It allows you to learn Algorand
 Blockchain without having to touch either TestNet or MainNet. Code using
-the Algorand SDKs , can be used to access the Private Network.  
+the Algorand SDKs, can be used to access the Private Network.  
   
 This exercise is suggested for developers that are just getting started
-with Algorand, we have a full set of Private Network tutorials at:
-[<span class="underline">https://developer.algorand.org/docs/tutorials</span>](https://developer.algorand.org/docs/tutorials).
-This is a great learning resource.
+with Algorand.
 
 Note: the [<span class="underline">Algorand TestNet
-Dispenser</span>](https://bank.testnet.algorand.network/), which a tool
-used to send Algos to an account, only works for TestNet and not a
-Private Network.
-
-> ![A screenshot of a cell phone Description automatically
-> generated](images/media/image11.png)
+Dispenser</span>](https://bank.testnet.algorand.network/), a tool used
+to send Algos to an account, only works for TestNet and not a Private
+Network.
 
 1)  Navigate to the algorandsamples folder
 
@@ -450,7 +523,7 @@ Private Network.
     and Node Nodes that will be created.
 
 > ![A close up of a map Description automatically
-> generated](images/media/image12.png)
+> generated](images/media/image11.png)
 
 3)  In Finder, navigate to your root directory and show the directory
     structure does not have folders for Node and Primary.
@@ -458,26 +531,30 @@ Private Network.
 4)  Run this command in Terminal from the node folder to create the
     private network.
 
-<!-- end list -->
-
-  - **goal network create -r \~/net1 -n private -t
-    networktemplate.json**
+> **goal network create -r \~/net1 -n private -t networktemplate.json**
 
 ![A screenshot of a cell phone Description automatically
-generated](images/media/image13.png)
+generated](images/media/image12.png)
 
-  - **goal network start -r \~/net1**
-
-  - **goal network status -r \~/net1**
+> **goal network start -r \~/net1**
+> 
+> **goal network status -r \~/net1**
 
 ![A screenshot of a social media post Description automatically
-generated](images/media/image14.png)
+generated](images/media/image13.png)
 
 5)  Open Finder and look at the directory structure for /net1/Node and
     /net1/Primary  
       
     ![A screenshot of a cell phone Description automatically
-    generated](images/media/image15.png)
+    generated](images/media/image14.png)
+
+6)  (Optional) The full set of Private Network tutorials are here:
+    [<span class="underline">https://developer.algorand.org/docs/tutorials</span>](https://developer.algorand.org/docs/tutorials).
+    This is a great learning resource.
+
+> ![A screenshot of a cell phone Description automatically
+> generated](images/media/image15.png)
 
 Go to
 <span class="underline"><https://developer.algorand.org/docs/creating-new-account-and-participation-key></span>
@@ -494,14 +571,11 @@ to complete all the rest of the tasks in this tutorial including:
 > ![A screenshot of a cell phone Description automatically
 > generated](images/media/image16.png)
 
-Note: The TestNet Dispenser only works for TestNet accounts (not Private
-Network)
+7)  Once finished you can delete the private network as this is for
+    learning only and cannot be used for further development, other than
+    testing with SDK code. Delete the Private Network
 
-6)  Delete the Private Network
-
-<!-- end list -->
-
-  - **goal network delete -r \~/net1**
+> **goal network delete -r \~/net1**
 
 # **Goal Command Line tools / AlgoExplorer.io**  
 
@@ -515,12 +589,17 @@ well as the AlgoExplorer.io.
 The goal command line tool provides access to these objects, methods and
 properties.
 
-![A screenshot of a computer Description automatically
-generated](images/media/image17.png)
+> ![A screenshot of a computer Description automatically
+> generated](images/media/image17.png)
 
 1.  To start a node use this command:
 
-> goal node start -d \~/node/data
+> goal node start -d \~/node/data  
+>   
+> You may need to use this command depending on your path environment
+> variable.
+> 
+> ./goal node start -d \~/node/data
 
 2.  To start kmd use this command:  
       
@@ -831,7 +910,7 @@ console.log(e);
 > Transaction</span>](https://developer.algorand.org/docs/javascript-sdk#node-example-multisig)
 
 13) [**<span class="underline">Skip to next
-    section</span>**](#resources)
+    section</span>**](#_heading=h.28h4qwu)
 
 > <span id="bookmark=id.3ygebqi" class="anchor"></span>**Go SDK  
 > **Time Estimate - 20 minutes
