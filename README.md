@@ -119,7 +119,7 @@ Time Estimate: 1 hour**
 
 This section provides guidance on installing an Algorand node and the
 tools that will be useful in your hackathon efforts. Happy coding\!
-Download algorandsamples.zip at <http://github.com/algorand/hackathon>
+Download algorandsamples.zip at <http://github.com/algorand-devrel/hackathon>
 and unzip into a folder off of your $HOME folder. In terminal type in
 echo $HOME to get your Home folder location.
 
@@ -382,7 +382,7 @@ samples**
   
 Time Estimate - 5 minutes  
   
-From <http://github.com/algoand>/hackathon Download/Clone the Hackathon
+From <http://github.com/algoand-devrel/hackathon>/hackathon Download/Clone the Hackathon
 repository which has the algorandsamples.zip file and this document in
 the readme.md, Unzip into a folder off of your $HOME folder
 
