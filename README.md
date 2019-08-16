@@ -119,8 +119,7 @@ Time Estimate: 1 hour**
 
 This section provides guidance on installing an Algorand node and the
 tools that will be useful in your hackathon efforts. Happy coding\!
-Download
-[<span class="underline">algorandsamples.zip</span>](https://drive.google.com/file/d/199BdejiyA_dTRlqwOqcoubtoRG_WHwAH/view?usp=sharing)
+Download algorandsamples.zip at <http://github.com/algorand/hackathon>
 and unzip into a folder off of your $HOME folder. In terminal type in
 echo $HOME to get your Home folder location.
 
@@ -276,19 +275,19 @@ SDKs in your language of choice.
 These are the SDKs available to date. More are on the way. \*\***  
 Time Estimate - 10 minutes
 
-  - Go
+  - Go, see install notes here
     [<span class="underline">https://github.com/algorand/go-algorand-sdk</span>](https://github.com/algorand/go-algorand-sdk)
     
       - See Go SDK documentation here:
         [<span class="underline">https://godoc.org/github.com/algorand/go-algorand-sdk</span>](https://godoc.org/github.com/algorand/go-algorand-sdk)
 
-  - Python
+  - Python, see install notes here
     [<span class="underline">https://github.com/algorand/py-algorand-sdk</span>](https://github.com/algorand/py-algorand-sdk)
     
       - See Python SDK documentation here:
         [<span class="underline">https://py-algorand-sdk.readthedocs.io/en/latest/</span>](https://py-algorand-sdk.readthedocs.io/en/latest/)
 
-  - Java
+  - Java, see install notes here
     [<span class="underline">https://github.com/algorand/java-algorand-sdk</span>](https://github.com/algorand/java-algorand-sdk)
     
       - See Java documentation here
@@ -296,7 +295,7 @@ Time Estimate - 10 minutes
 
 <!-- end list -->
 
-  - JavaScript
+  - JavaScript, see install notes here
     [<span class="underline">https://github.com/algorand/js-algorand-sdk</span>](https://github.com/algorand/js-algorand-sdk)
     
       - See JavaScript SDK documentation
@@ -383,11 +382,9 @@ samples**
   
 Time Estimate - 5 minutes  
   
-From <http://github.com/algoand> Download/Clone the Hackathon repository
-which has the
-[<span class="underline">algorandsamples.zip</span>](https://drive.google.com/file/d/199BdejiyA_dTRlqwOqcoubtoRG_WHwAH/view?usp=sharing)
-file and this document in the readme.md, Unzip into a folder off of your
-$HOME folder
+From <http://github.com/algoand>/hackathon Download/Clone the Hackathon
+repository which has the algorandsamples.zip file and this document in
+the readme.md, Unzip into a folder off of your $HOME folder
 
 In terminal type in echo $HOME to get your Home folder location. The
 contents should look similar to this:
