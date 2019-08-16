@@ -119,9 +119,10 @@ Time Estimate: 1 hour**
 
 This section provides guidance on installing an Algorand node and the
 tools that will be useful in your hackathon efforts. Happy coding\!
-Download algorandsamples.zip at <http://github.com/algorand-devrel/hackathon>
-and unzip into a folder off of your $HOME folder. In terminal type in
-echo $HOME to get your Home folder location.
+Download algorandsamples.zip at
+<http://github.com/algorand-devrel/hackathon> and unzip into a folder
+off of your $HOME folder. In terminal type in echo $HOME to get your
+Home folder location.
 
 <span id="_Toc16786815" class="anchor"></span>**Install Algorand node  
 **Time Estimate 10 minutes
@@ -382,9 +383,9 @@ samples**
   
 Time Estimate - 5 minutes  
   
-From <http://github.com/algoand-devrel/hackathon>/hackathon Download/Clone the Hackathon
-repository which has the algorandsamples.zip file and this document in
-the readme.md, Unzip into a folder off of your $HOME folder
+From <http://github.com/algoand-devrel/hackathon> Download/Clone the
+Hackathon repository which has the algorandsamples.zip file and this
+document in the readme.md, Unzip into a folder off of your $HOME folder
 
 In terminal type in echo $HOME to get your Home folder location. The
 contents should look similar to this:
@@ -849,8 +850,7 @@ the algod.net
 
 //and algod.token files within the data directory
 
-const atoken =
-"d60cb951132a5fed9dde1abeadd4ea02b2c8d9815ee1eb1cb932941eaa3821c8";
+const atoken = "your token here";
 
 const aserver = "http://127.0.0.1";
 
